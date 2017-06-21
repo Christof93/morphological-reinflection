@@ -38,7 +38,7 @@ import progressbar
 import datetime
 import time
 import common
-from matplotlib import pyplot as plt
+#~ from matplotlib import pyplot as plt
 from docopt import docopt
 import dynet as pc
 from collections import defaultdict
@@ -146,11 +146,11 @@ def main(train_path, dev_path, test_path, results_file_path, sigmorphon_root_dir
         print 'skipped training by request. evaluating best models:'
 
     # eval on dev
-    print '=========DEV EVALUATION:========='
-    evaluate_ndst(alphabet, alphabet_index, ensemble, feat_index, feat_input_dim, feature_alphabet, feature_types,
-                  hidden_dim, hyper_params, input_dim, inverse_alphabet_index, layers, results_file_path,
-                  sigmorphon_root_dir, dev_feat_dicts, dev_lemmas, dev_path,
-                  dev_words, train_path)
+    #~ print '=========DEV EVALUATION:========='
+    #~ evaluate_ndst(alphabet, alphabet_index, ensemble, feat_index, feat_input_dim, feature_alphabet, feature_types,
+                  #~ hidden_dim, hyper_params, input_dim, inverse_alphabet_index, layers, results_file_path,
+                  #~ sigmorphon_root_dir, dev_feat_dicts, dev_lemmas, dev_path,
+                  #~ dev_words, train_path)
 
     # eval on test
     print '=========TEST EVALUATION:========='
@@ -460,7 +460,7 @@ def one_word_loss(model, char_lookup, feat_lookup, R, bias, encoder_frnn, encode
     # convert features to matching embeddings, if UNK handle properly
     feat_vecs = encode_feats(feat_index, feat_lookup, feats, feature_types)
 
-    feats_input = pc.concatenate(feat_vecs)
+    #~ feats_input = pc.concatenate(feat_vecs)
 
     blstm_outputs = bilstm_transduce(encoder_frnn, encoder_rrnn, lemma_char_vecs)
 
@@ -486,7 +486,7 @@ def one_word_loss(model, char_lookup, feat_lookup, R, bias, encoder_frnn, encode
         possible_outputs = []
 
         # feedback, blstm[i], feats
-        decoder_input = pc.concatenate([prev_output_vec, blstm_outputs[i], feats_input])
+        decoder_input = pc.concatenate([prev_output_vec, blstm_outputs[i]])
 
         # if reached the end word symbol
         if output_char == END_WORD:
@@ -517,7 +517,7 @@ def one_word_loss(model, char_lookup, feat_lookup, R, bias, encoder_frnn, encode
 
         # if 0-to-1 or 1-to-1 alignment, compute loss for predicting the output symbol
         if aligned_word[align_index] != ALIGN_SYMBOL:
-            decoder_input = pc.concatenate([prev_output_vec, blstm_outputs[i], feats_input])
+            decoder_input = pc.concatenate([prev_output_vec, blstm_outputs[i]])
 
             # feed new input to decoder
             s = s.add_input(decoder_input)
@@ -542,7 +542,7 @@ def one_word_loss(model, char_lookup, feat_lookup, R, bias, encoder_frnn, encode
         if i < len(padded_lemma) - 1 and aligned_lemma[align_index + 1] != ALIGN_SYMBOL:
             # perform rnn step
             # feedback, blstm[i], feats
-            decoder_input = pc.concatenate([prev_output_vec, blstm_outputs[i], feats_input])
+            decoder_input = pc.concatenate([prev_output_vec, blstm_outputs[i]])
 
             s = s.add_input(decoder_input)
             decoder_rnn_output = s.output()
@@ -598,7 +598,7 @@ def predict_output_sequence(model, char_lookup, feat_lookup, R, bias, encoder_fr
     # convert features to matching embeddings, if UNK handle properly
     feat_vecs = encode_feats(feat_index, feat_lookup, feats, feature_types)
 
-    feats_input = pc.concatenate(feat_vecs)
+    #~ feats_input = pc.concatenate(feat_vecs)
 
     blstm_outputs = bilstm_transduce(encoder_frnn, encoder_rrnn, lemma_char_vecs)
 
@@ -619,8 +619,7 @@ def predict_output_sequence(model, char_lookup, feat_lookup, R, bias, encoder_fr
 
         # prepare input vector and perform LSTM step
         decoder_input = pc.concatenate([prev_output_vec,
-                                        blstm_outputs[i],
-                                        feats_input])
+                                        blstm_outputs[i]])
 
         s = s.add_input(decoder_input)
 
@@ -750,6 +749,7 @@ def evaluate_ndst(alphabet, alphabet_index, ensemble, feat_index, feat_input_dim
                   hidden_dim, hyper_params, input_dim, inverse_alphabet_index, layers, results_file_path,
                   sigmorphon_root_dir, test_feat_dicts, test_lemmas, test_path,
                   test_words, train_path, print_results=False):
+    print "<<<<<<<<<<<<<<<<<< DEBUG ==>evaluate ndst"
     accuracies = []
     final_results = {}
     if ensemble:
@@ -830,6 +830,7 @@ def evaluate_ndst(alphabet, alphabet_index, ensemble, feat_index, feat_input_dim
                                                                               feature_alphabet, feat_input_dim,
                                                                               feature_types)
         try:
+            print "predicting"
             predicted_sequences = predict_sequences(best_model,
                                                     char_lookup, feat_lookup, R, bias, encoder_frnn,
                                                     encoder_rrnn, decoder_rnn,
@@ -840,6 +841,7 @@ def evaluate_ndst(alphabet, alphabet_index, ensemble, feat_index, feat_input_dim
                                                     feat_index,
                                                     feature_types)
         except Exception as e:
+            print "except1!"
             print e
             traceback.print_exc()
 
@@ -853,6 +855,7 @@ def evaluate_ndst(alphabet, alphabet_index, ensemble, feat_index, feat_input_dim
                                   print_results=False)
         accuracies.append(accuracy)
     except Exception as e:
+        print "except2!"
         print e
         traceback.print_exc()
 

@@ -150,7 +150,7 @@ def write_results_file_and_evaluate_externally(hyper_params, accuracy, train_pat
                 if 'test-covered' in test_path:
                     lemma, morph = line.split()
                 else:
-                    lemma, morph, word = line.split()
+                    lemma, morph, word = line.split("\t")
                 if i in final_results:
                     if nbest:
                         for p in final_results[i][2]:

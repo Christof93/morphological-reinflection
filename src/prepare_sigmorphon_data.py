@@ -44,7 +44,7 @@ def load_data(filename, task=1):
                         # fix finnish ddn13 bad examples
                         print line.encode('utf8')
                         source = splt[0]
-                        feats = [s for s in splt if '=' in s][0]
+                        feats = splt[1]
                         target = splt[-1]
                         print 'fixed: source: {} feats: {} target: {}'.format(source.encode('utf8'),
                                                                               feats.encode('utf8'),
@@ -105,15 +105,15 @@ def get_alphabet(words, lemmas, feat_dicts, feat_dicts2=None):
     feat_dicts_list = [feat_dicts]
     if feat_dicts2:
         feat_dicts_list.append(feat_dicts2)
-    for feat_dicts in feat_dicts_list:
-        for feat_dict in feat_dicts:
-            for feat_key in feat_dict:
-                possible_feats.add(feat_key)
-                # string representing feature key+val
-                feat = feat_key + '=' + feat_dict[feat_key]
-                alphabet.add(feat)
-                # also add null value in case we don't have it
-                alphabet.add(feat_key + '=' + NULL)
+    #~ for feat_dicts in feat_dicts_list:
+        #~ for feat_dict in feat_dicts:
+            #~ for feat_key in feat_dict:
+                #~ possible_feats.add(feat_key)
+                #~ # string representing feature key+val
+                #~ feat = feat_key + '=' + feat_dict[feat_key]
+                #~ alphabet.add(feat)
+                #~ # also add null value in case we don't have it
+                #~ alphabet.add(feat_key + '=' + NULL)
     print 'alphabet size:', len(alphabet)
     print 'possible features:', possible_feats
     return list(alphabet), list(possible_feats)
@@ -122,9 +122,9 @@ def get_alphabet(words, lemmas, feat_dicts, feat_dicts2=None):
 def make_feat_dict(feats_str):
             
     feat_dict = {}
-    for feat_key_val in feats_str.split(','):
-        feat_key, feat_val = feat_key_val.split('=')
-        feat_dict[feat_key] = feat_val                  
+    #~ for feat_key_val in feats_str.split(','):
+        #~ feat_key, feat_val = feat_key_val.split('=')
+        #~ feat_dict[feat_key] = feat_val                  
     return feat_dict
 
 
