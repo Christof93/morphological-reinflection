@@ -1,0 +1,18 @@
+python hard_attention.py --dynet-mem 4096 --input=10 --hidden=10 --feat-input=20 --epochs=10 --layers=2 --optimization=ADADELTA  ../data/ddn13/base_forms_de_noun_train.txt.sigmorphon_format.txt ../data/ddn13/base_forms_de_noun_dev.txt.sigmorphon_format.txt ../data/ddn13/base_forms_de_noun_test.txt.sigmorphon_format.txt ./de_noun_results.txt ../data
+
+
+/Users/chrble/Google Drive/Computerlinguistik/Programmierprojekt Normalization/nn_experiments/morphological-reinflection/
+
+
+python hard_attention.py --dynet-mem 4096 --input=10 --hidden=10 --feat-input=20 --epochs=10 --layers=2 --optimization=ADADELTA ../../train_archi.tsv ../../dev_archi.tsv ../../test_archi.tsv ../../archi_results.txt ../..
+
+
+results with 1 hidden layers,10 neurons and 10 epochs:
+5351
+8177
+0.654396477926
+
+results with 2 hidden layers,10 neurons and 10 epochs:
+5330
+8177
+0.651828298887

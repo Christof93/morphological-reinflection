@@ -1,0 +1,13 @@
+train path = ../data/ddn13/base_forms_de_noun_train.txt.sigmorphon_format.txt
+test path = ../data/ddn13/base_forms_de_noun_dev.txt.sigmorphon_format.txt
+FEAT_INPUT_DIM = 20
+EPOCHS = 10
+REGULARIZATION = 0.0
+OPTIMIZATION = ADADELTA
+HIDDEN_DIM = 10
+INPUT_DIM = 10
+PATIENCE = 100
+MAX_PREDICTION_LEN = 50
+LEARNING_RATE = 0.0001
+LAYERS = 2
+Prediction Accuracy = 2.365
