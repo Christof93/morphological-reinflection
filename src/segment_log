@@ -1,0 +1,100 @@
+gold: _dann_bin_ich_aufgestanden_und_heim_gerannt_
+template: ^_^d^an^n^_^b^i^n^_^i^c^h^_^a^u^f^g^e^s^t^e^i^n^d^e^n^_^u^n^d^_^h^e^im^_^g^r^e^n^d^_^
+prediction: _dann_bin_ich_aufgesteinden_und_heim_grend_
+X
+lemma: _und_und_en_wiite_wääg_müese_räne_
+gold: _und_und_einen_weiten_weg_müssen_rennen_
+template: ^_^u^n^d^_^u^n^d^_^ei^n^_^w^e^i^t^e^_^w^ä^^g^_^m^ü^s^s^en^_^r^e^n^en^_^
+prediction: _und_und_ein_weite_wäg_müssen_renen_
+X
+lemma: _und_zu_miner_mueter_und_ha_das_gsäit_und_mer_händ_mir_händ_prüelet_mitenand_
+gold: _und_zu_meiner_mutter_und_habe_das_gesagt_und_wir_haben_wir_haben_gebrüelt_miteinander_
+template: ^_^u^n^d^_^z^u^_^me^i^n^e^r^_^m^u^t^t^e^r^_^u^n^d^_^h^abe^_^d^a^s^_^ge^s^a^g^t^_^u^n^d^_^w^i^r^_^h^a^be^n^_^w^i^r^_^h^a^be^n^_^p^r^ü^^l^^t^_^m^i^t^e^
+prediction: _und_zu_meiner_mutter_und_habe_das_gesagt_und_wir_haben_wir_haben_prült_mite
+X
+lemma: _mir_händ_würkli_glitte_also_doo_als_tüütschi_wil_mir_wil_mir_so_genanti_söischwaabe_gsii_sind_
+gold: _wir_haben_wirklich_gelitten_also_da_als_deutsche_weil_wir_weil_wir_so_genannte_sauschwaben_gewesen_sind_
+template: ^_^w^i^r^_^h^a^be^n^_^w^i^r^k^le^in^_^g^l^i^t^t^en^_^a^l^s^o^_^d^a^^_^a^l^s^_^d^e^u^t^s^c^h^e^_^we^i^l^_^w^i^r^_^we^i^l^_^w^i^r^_^s^o^_^g^e^n^a^n^t^e
+prediction: _wir_haben_wirklein_glitten_also_da_als_deutsche_weil_wir_weil_wir_so_genante
+X
+lemma: _mir_händ_öis_nöd_als_ä_nöd_als_schwaabe_hämmer_öis_gsee_
+gold: _wir_haben_uns_nicht_als_auch_nicht_als_schwaben_haben_wir_uns_gesehen_
+template: ^_^w^i^r^_^h^a^be^n^_^u^n^s^_^ni^ch^t^_^a^l^s^_d^as^_^ni^ch^t^_^a^l^s^_^s^c^h^w^a^h^b^en^_^h^aben^_^w^i^r^_^u^n^s^_^ge^s^eh^en^_^
+prediction: _wir_haben_uns_nicht_als_das_nicht_als_schwahben_haben_wir_uns_gesehen_
+X
+lemma: _mir_sind_schwiizer_gsii_näi_das_gläub_ich_nööd_mini_
+gold: _wir_sind_schweizer_gewesen_nein_das_glaube_ich_nicht_meine_
+template: ^_^w^i^r^_^s^i^n^d^_^s^c^h^w^e^i^z^e^r^_^gewe^s^e^n^_^n^e^in^_^d^a^s^_^g^l^a^u^be^_^i^c^h^_^ni^c^h^t^_^me^i^n^e^_^
+prediction: _wir_sind_schweizer_gewesen_nein_das_glaube_ich_nicht_meine_
+V
+lemma: _mini_mueter_hät_mit_miir_zäme_prüelet_und_isch_nöd_emal_go_dèè_leerer_häts_waarschinli_hiignaa_das_wäiss_ich_wüssed_si_mir_händ_ich_cha_äu_nüme_säge_wele_leerer_
+gold: _meine_mutter_hat_mit_mir_zusammen_gebrüelt_und_ist_nicht_einmal_gan_der_lehrer_hat_es_wahrscheinlich_hingenommen_das_weiss_ich_wissen_sie_wir_haben_ich_kann_auch_nicht_mehr_sagen_welcher_lehrer_
+template: ^_^me^i^n^e^_^m^u^t^t^e^r^_^h^a^t^_^m^i^t^_^m^i^^r^_^zus^am^m^en^_^p^r^ü^^l^e^t^_^u^n^d^_^i^s^t^_^d^a^n^d^_^ein^m^a^l^_^ga^n^_^d^e^r^_^l^e^h^r^e^r^_^
+prediction: _meine_mutter_hat_mit_mir_zusammen_prület_und_ist_dand_einmal_gan_der_lehrer_
+X
+lemma: _mir_händ_alpot_leererwächsel_ghaa_
+gold: _wir_haben_allpott_lehrerwechsel_gehabt_
+template: ^_^w^i^r^_^h^a^be^n^_^a^l^p^o^t^_^l^e^h^r^e^r^w^ä^c^h^s^e^l^_^ge^h^a^bt^_^
+prediction: _wir_haben_alpot_lehrerwächsel_gehabt_
+X
+lemma: _wil_die_mane_händ_müesen_in_militèèrdienscht_
+gold: _weil_die_männer_haben_müssen_in_militärdienst_
+template: ^_^we^i^l^_^d^i^e^_^m^a^n^e^_^h^a^be^n^_^w^i^s^s^e^n^_^i^n^_^m^i^l^i^t^ä^^r^d^i^e^n^s^t^_^g^e^s^o^_^
+prediction: _weil_d|>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> | ETA:  0:07:16|>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>| Time: 12:00:31
+python: can't open file '../src/evalm.py': [Errno 2] No such file or directory
+python: can't open file '../src/evalm.py': [Errno 2] No such file or directory
+ie_mane_haben_wissen_in_militärdienst_geso_
+X
+lemma: _und_emal_hämmer_
+gold: _und_einmal_haben_wir_
+template: ^_^u^n^d^_^ein^m^a^l^_^h^aben^_^w^i^r^_^
+prediction: _und_einmal_haben_wir_
+V
+lemma: _äu_en_naachber_wo_sibeti_und_achti_ghaa_hät_hät_öis_äu_i_de_sek_mit_sine_schüeler_zäme_ghaa_
+gold: _auch_ein_nachbar_wo_siebte_und_achte_gehabt_hat_hat_uns_auch_in_der_sek_mit_seinen_schülern_zusammen_gehabt_
+template: ^_^a^uch^_^ei^n^_^n^a^^c^h^b^a^r^_^w^o^_^s^i^e^b^t^e^_^u^n^d^_^a^c^h^t^e^_^ge^h^a^bt^_^h^a^t^_^h^a^t^_^u^n^s^_^a^uch^_^in^_^d^er^_^s^e^k^_^m^i^t^_^se
+prediction: _auch_ein_nachbar_wo_siebte_und_achte_gehabt_hat_hat_uns_auch_in_der_sek_mit_se
+X
+lemma: _und_ich_wäiss_aber_nüme_wele_leerer_das_das_gsii_isch_und_wüssed_si_
+gold: _und_ich_weiss_aber_nicht_mehr_welcher_lehrer_dass_das_gewesen_ist_und_wissen_sie_
+template: ^_^u^n^d^_^i^c^h^_^w^e^i^s^s^_^a^b^e^r^_^nich^t_^m^ehr^_^w^el^l^en^_^l^e^h^r^e^r^_^d^a^s^_^d^a^s^_^gewe^s^e^n^_^i^s^t^^_^u^n^d^_^w^ü^s^s^e^n^_^s^ie^_
+prediction: _und_ich_weiss_aber_nicht_mehr_wellen_lehrer_das_das_gewesen_ist_und_wüssen_sie_
+X
+lemma: _mich_mir_händ_doo_dozmal_hät_mer_sich_gägen_en_leerer_
+gold: _mich_wir_haben_da_dazumal_hat_man_sich_gegen_einen_lehrer_
+template: ^_^m^i^c^h^_^m^i^r^_^h^a^b^e^n^_^d^a^_^d^o^z^m^a^l^_^h^a^t^_^m^a^n^_^s^i^c^h^_^g^e^g^e^n^_^ei^n^_^l^e^h^r^e^r^_^
+prediction: _mich_mir_haben_da_dozmal_hat_man_sich_gegen_ein_lehrer_
+X
+lemma: _nie_getrout_öppis_z_säge_aso_vo_öisere_schicht_
+gold: _nie_getraut_etwas_zu_sagen_also_von_unserer_schicht_
+template: ^_^n^i^e^_^g^e^t^r^o^u^t^_^e^t^w^a^s^_^zu^_^s^a^g^en^_^al^s^o^_^v^on^_^u^n^s^e^r^er^_^s^c^h^i^c^h^t^_^
+prediction: _nie_getrout_etwas_zu_sagen_also_von_unserer_schicht_
+X
+lemma: _aso_ich_bi_ja_z_waliselen_ufgwachsen_und_das_isch_e_
+gold: _also_ich_bin_ja_zu_wallisellen_aufgewachsen_und_das_ist_e_
+template: ^_^al^s^o^_^i^c^h^_^b^in^_^j^a^_^zu^_^w^al^l^i^s^e^ll^e^n^_a^u^f^ge^w^a^c^h^s^e^n^_^u^n^d^_^d^a^s^_^i^s^t^_ei^n^e^_^
+prediction: _also_ich_bin_ja_zu_wallisellen_aufgewachsen_und_das_ist_eine_
+X
+finished evaluating model. accuracy: 167/1022=0.163405088063
+
+
+epoch: 99 train loss: 0.0942 dev loss: 0.2296 dev accuracy: 0.1634 train accuracy = 0.0700  best dev accuracy 0.2691 best train accuracy: 0.1700 patience = 80
+finished training. average loss: 0.0941598802759
+stopped on epoch 99
+finished training all models
+=========TEST EVALUATION:=========
+<<<<<<<<<<<<<<<<<< DEBUG ==>evaluate ndst
+creating model...
+decoder lstm dimensions are 300 x 100
+finished creating model
+trying to load model from: ../archi_segm_results.txt_bestmodel.txt
+predicting
+macro avg accuracy: 0.266470009833
+micro avg accuracy: 0.266470009833
+len of test file is 1029
+len of predictions file is 1029
+wrote results to: ../archi_segm_results.txt.best.test.test
+../archi_segm_results.txt.best.test.test.evaluation
+../archi_segm_results.txt.best.test.test.predictions
+43346.75user 2.22system 12:02:30elapsed 99%CPU (0avgtext+0avgdata 8447400maxresident)k
+248inputs+250664outputs (0major+32777minor)pagefaults 0swaps

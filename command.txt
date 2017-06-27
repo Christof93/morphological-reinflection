@@ -6,6 +6,10 @@ python hard_attention.py --dynet-mem 4096 --input=10 --hidden=10 --feat-input=20
 
 python hard_attention.py --dynet-mem 4096 --input=10 --hidden=10 --feat-input=20 --epochs=10 --layers=2 --optimization=ADADELTA ../../train_archi.tsv ../../dev_archi.tsv ../../test_archi.tsv ../../archi_results.txt ../..
 
+nohup time python hard_attention.py --dynet-mem 8192 --input=100 --hidden=100
+--feat-input=20 --epochs=100 --layers=2 --optimization=ADADELTA
+../data/train_archi.tsv ../data/dev_archi.tsv ../data/test_archi.tsv
+../archi_results.txt .. &
 
 results with 1 hidden layers,10 neurons and 10 epochs:
 5351
@@ -16,3 +20,8 @@ results with 2 hidden layers,10 neurons and 10 epochs:
 5330
 8177
 0.651828298887
+
+result with one hidden layer 100 neurons and 10 epochs:
+5105
+8177
+0.6243120949

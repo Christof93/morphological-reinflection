@@ -1,0 +1,13 @@
+train path = ../data/train_segm_archi.tsv
+test path = ../data/test_segm_archi.tsv
+FEAT_INPUT_DIM = 20
+EPOCHS = 100
+REGULARIZATION = 0.0
+OPTIMIZATION = ADADELTA
+HIDDEN_DIM = 100
+INPUT_DIM = 100
+PATIENCE = 100
+MAX_PREDICTION_LEN = 50
+LEARNING_RATE = 0.0001
+LAYERS = 2
+Prediction Accuracy = 0.266470009833
